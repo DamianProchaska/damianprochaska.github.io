@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="navbar">
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+          </svg>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</a></li>
+                <li><a onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">Experience</a></li>
+                <li><a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a></li>
+                <li><a onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})">Skills</a></li>
+            </ul>
+        </nav>
+        <button>Contact Me</button>
+
+        <div id="mobile_menu" class="overlay">
+            <div class="overlay_content">
+                <a onclick="document.getElementById('about').scrollIntoView()">About Me</a>
+                <a onclick="document.getElementById('experience').scrollIntoView()">Experience</a>
+                <a onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
+                <a onclick="document.getElementById('skills').scrollIntoView()">Skills</a>
+            </div>
+        </div>
+
+    </header>
+    <section class="landingPage">
+        <div class="welcome">
+        <h1>
+            <span class="hello">Hi, my name is</span><br>
+            <span class="name">Damian<br>Prochaska</span><br><br>
+            <span class="desc">I'm front-end web developer</span>
+        </h1>
+        </div>
+
+        <div class="photo">
+            <img src="img/DSC_0807.jpg" alt="Profile Picture">
+        </div>
+        <div class="buttons">
+            <button class="aboutBtn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                ABOUT ME
+            </button>
+            <button class="aboutBtn">
+                CV
+            </button>
+        </div>
+
+        <div class="links">
+            <div class="linkList">
+                            <a href="https://github.com/DamianProchaska">
+                <img src="img/github.png" alt="">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/damian-prochaska-06a9181a0/">
+                <img src="img/linkedin.png" alt="">
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:damian.prochaska@gmail.com">
+                <img src="img/mail.png" alt="">
+                <span>damian.prochaska@gmail.com</span>
+            </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="custom-shape-divider-bottom-1645026081">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <h2>LET ME <br> <span>INTRODUCE</span> <br>MYSELF</h2>
+        <div class="aboutMe">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima suscipit dolorum vero consequatur tempore officia mollitia, praesentium, architecto eveniet molestiae illum nihil magni blanditiis repudiandae. Aut vitae voluptatem nisi odio sed alias veritatis laboriosam eligendi, maiores culpa in pariatur laudantium placeat enim perferendis necessitatibus totam! Nihil dolores rerum id.
+        </div>
+        <h2 id="experience">EXPERIENCE</h2>
+        <div class="experience">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur nihil nemo recusandae quia ad minima, rerum possimus autem voluptas. Libero autem delectus minus? Quasi assumenda neque excepturi maiores molestiae. Enim, aliquid illo, eius quo quis dignissimos sint ad laborum a quidem cupiditate accusantium. Nemo doloribus quae odit incidunt veritatis.
+        </div>
+        <h2 id="projects">PROJECTS</h2>
+        <div class="projects">
+            <div>Library</div>
+            <div>Employee manager</div>
+        </div>
+        <h2 id="skills">SKILLS</h2>
+        <div class="skills">
+
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>
