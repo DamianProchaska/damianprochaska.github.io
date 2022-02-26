@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Prochaska</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header id="navbar">
         <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-            <path
-                  class="line top"
-                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
-            <path
-                  class="line middle"
-                  d="m 70,50 h -40" />
-            <path
-                  class="line bottom"
-                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
-          </svg>
+            <path class="line top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
 
         <nav>
             <ul class="nav_links">
-                <li><a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</a></li>
-                <li><a onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">Experience</a></li>
-                <li><a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a></li>
-                <li><a onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})">Skills</a></li>
+                <li>
+                    <a onclick="window.scrollTo(0, 0)"><img src="img/home.png" alt="scroll up" style="width: 20px;"></a>
+                </li>
+                <li>
+                    <a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</a>
+                </li>
+
+                <li>
+                    <a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a>
+                </li>
+
+                <!-- <li>
+                    <a
+                        onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">Experience</a>
+                </li> -->
+
+                <li>
+                    <a onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Skills</a>
+                </li>
             </ul>
         </nav>
         <button>Contact Me</button>
@@ -37,8 +53,8 @@
         <div id="mobile_menu" class="overlay">
             <div class="overlay_content">
                 <a onclick="document.getElementById('about').scrollIntoView()">About Me</a>
-                <a onclick="document.getElementById('experience').scrollIntoView()">Experience</a>
                 <a onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
+                <!-- <a onclick="document.getElementById('experience').scrollIntoView()">Experience</a> -->
                 <a onclick="document.getElementById('skills').scrollIntoView()">Skills</a>
             </div>
         </div>
@@ -46,13 +62,13 @@
     </header>
     <section class="landingPage">
         <div class="welcome">
-        <h1>
-            <span class="hello">Hi, my name is</span><br>
-            <span class="name">Damian<br>Prochaska</span><br><br>
-            <span class="desc">I'm front-end web developer</span>
-        </h1>
+            <h1>
+                <span class="hello">Hi, my name is</span><br>
+                <span class="name">Damian<br>Prochaska</span><br><br>
+                <span class="desc">I'm front-end web developer</span>
+            </h1>
         </div>
-
+        <!-- <hr> -->
         <div class="photo">
             <img src="img/DSC_0807.jpg" alt="Profile Picture">
         </div>
@@ -67,51 +83,214 @@
 
         <div class="links">
             <div class="linkList">
-                            <a href="https://github.com/DamianProchaska">
-                <img src="img/github.png" alt="">
-                <span>GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/damian-prochaska-06a9181a0/">
-                <img src="img/linkedin.png" alt="">
-                <span>LinkedIn</span>
-            </a>
-            <a href="mailto:damian.prochaska@gmail.com">
-                <img src="img/mail.png" alt="">
-                <span>damian.prochaska@gmail.com</span>
-            </a>
+
+                <a id="githubLink" href="https://github.com/DamianProchaska">
+                    <img src="img/github.png" alt="">
+                    <!-- <span>GitHub</span> -->
+                </a>
+
+               <a id="mailLink" href="#">
+                    <img id="mailImg" src="img/email.png" alt="">
+                    <!-- <span>damian.prochaska@gmail.com</span> -->
+                </a>
+
+                <a id="linkedinLink" href="https://www.linkedin.com/in/damian-prochaska-06a9181a0/">
+                    <img id="linkedinImg" src="img/whitelinkedin.png" alt="">
+                    <!-- <span>LinkedIn</span> -->
+                </a>
+                <div class="typewriterContainer">
+                    <p id="typewriter" class="typewriter"></p>
+                    <img id="sendEmailImg" class="sendEmailImg" src="img/sendEmail.png">
+                </div>
+
             </div>
 
         </div>
     </section>
     <section class="about" id="about">
         <div class="custom-shape-divider-bottom-1645026081">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
-        <h2>LET ME <br> <span>INTRODUCE</span> <br>MYSELF</h2>
+        <h2 class="introduce">LET ME <br> <span>INTRODUCE</span> <br>MYSELF</h2>
         <div class="aboutMe">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima suscipit dolorum vero consequatur tempore officia mollitia, praesentium, architecto eveniet molestiae illum nihil magni blanditiis repudiandae. Aut vitae voluptatem nisi odio sed alias veritatis laboriosam eligendi, maiores culpa in pariatur laudantium placeat enim perferendis necessitatibus totam! Nihil dolores rerum id.
+            Hello! My name is Damian and I'm an 18 years old student from Poland.
+            <br><br>
+            I have been programming for over 2 years and still learning new technologies, mostly focusing on frontend related technologies.
+            <br>
+            <br>
+            Here are a few of them I’ve been working with recently:
+            <ul>
+                <li>HTML</li>
+                <li>CSS/SCSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Angular</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C#</li>
+            </ul>
+            <br>
+            <br>
+            <p>My main focus these days is learning React and mobile development</p>
         </div>
-        <h2 id="experience">EXPERIENCE</h2>
-        <div class="experience">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur nihil nemo recusandae quia ad minima, rerum possimus autem voluptas. Libero autem delectus minus? Quasi assumenda neque excepturi maiores molestiae. Enim, aliquid illo, eius quo quis dignissimos sint ad laborum a quidem cupiditate accusantium. Nemo doloribus quae odit incidunt veritatis.
-        </div>
-        <h2 id="projects">PROJECTS</h2>
+
+
+
         <div class="projects">
-            <div>Library</div>
-            <div>Employee manager</div>
-        </div>
-        <h2 id="skills">SKILLS</h2>
-        <div class="skills">
+            <div class="custom-shape-divider-bottom-1645026081">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2 id="projects">PROJECTS</h2>
+            <div class="projectContainer">
+            <div class="projectList">
+                <div class="selector">
+                    <p id="firstProject" class="projectSelector selected">Online Library</p>
+                    <p id="secondProject" class="projectSelector">Employee Manager</p>
+                </div>
+                <div class="project" id="project1">
+                    <div class="project_title">Online Library</div>
+                    <div class="project_subtitle">Web application built with angular library</div>
+                    <div class="project_paragraph">
+                        This application was developed during the 2020-2021 internship in a group of 3 students
+                        <br><br>
+                        Main features of the app are browsing and borrowing books for logged users. Admin can also manage users accounts, add and edit books
+                        <br><br>
+                    </div>
+                    <div class="technologies">
+
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/DamianProchaska/angular-book-rental">
+                            <img src="img/github.png" alt="">
+                        </a>
+
+                        <a href="https://angular-book-rental.herokuapp.com/">
+                            <img src="img/website.png" alt="">
+                        </a>
+
+                        <a href="">
+                            <img class="videoImg" src="img/video.png" alt="Show video presentation of project">
+                        </a>
+                    </div>
+                </div>
+                <div class="project" id="project2">
+                    <div class="project_title">Employee manager</div>
+                    <div class="project_subtitle">Web application built with angular library</div>
+                    <div class="project_paragraph">
+                        This application was developed during the 2021 monthly internship in a group of 3 students
+                        <br><br>
+                        Main features of the app are viewing the list of employees, searching them by search engine or by clicking on map and manage(add and edit employee data)
+                        <br><br>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/DamianProchaska/angular-book-rental">
+                            <img src="img/github.png" alt="">
+                        </a>
+
+                        <a href="comingsoon.html">
+                            <img src="img/website.png" alt="">
+                        </a>
+
+                        <a href="comingsoon.html">
+                            <img class="videoImg" src="img/video.png" alt="Show video presentation of project">
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
 
         </div>
-    </section>
+
+
+
+        <!-- <div class="experience">
+            <div class="custom-shape-divider-bottom-1645026081">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2 id="experience">EXPERIENCE</h2>
+            <div class="timeline">
+
+                <div class="timeline_date">10.2021 - 11.2021</div>
+
+
+
+                <div class="timeline__middle">
+                    <div class="timeline__point"></div>
+                    <div class="timeline__point timeline__point--bottom"></div>
+                </div>
+
+
+                <div class="timeline__component">
+                    <h2 class="timeline__title">Full-stack web developer</h2>
+                    <p class="timeline__paragraph subtitle">
+                        Monthly Internship in EPLAN (Cieszyn, Poland)
+                    </p>
+                    <p class="timeline__paragraph">
+
+                    </p>
+                </div>
+
+
+                <div class="timeline_date">09.2020 - 06.2021</div>
+
+
+                <div class="timeline__middle"></div>
+
+
+                <div class="timeline__component">
+                    <h2 class="timeline__title">Full-stack web developer</h2>
+                    <p class="timeline__paragraph subtitle">
+                        One-year Internship in EPLAN (Cieszyn, Poland)
+                    </p>
+                    <p class="timeline__paragraph">
+
+                    </p>
+                </div>
+            </div>
+
+        </div> -->
+
+        <div class="contactMe">
+            <div class="custom-shape-divider-bottom-1645026081">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2 id="contact">GET IN TOUCH</h2>
+            <div class="emailContact">
+                <p>Contact me via e-mail <br><span>damian.prochaska@gmail.com</span></p>
+                <button>send message</button>
+            </div>
+        </div>
+
     <footer>
-
+        &copy; 2022 Damian Prochaska
     </footer>
+    </section>
+
 
     <script src="js/header.js"></script>
     <script src="js/mobile.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/projectpicker.js"></script>
 </body>
+
 </html>
