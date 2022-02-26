@@ -553,6 +553,21 @@ to {
     z-index: 1;
   }
 
+  .project .preview {
+    width: 100%;
+    box-shadow: 0 0 10px -2px black;
+  }
+
+  .project .technologies {
+    color: #e2b714;
+    font-size: 20px;
+  }
+
+  .project .technologies p span {
+    color: #646669;
+    font-size: 28px;
+  }
+
   #project2 {
     display: none;
   }
