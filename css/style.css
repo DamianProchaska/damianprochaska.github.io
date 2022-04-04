@@ -618,7 +618,11 @@ to {
     background-color: #323437;
     color: var(--mainColor);
     width: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
+  }
+
+  .contactMe button {
+    z-index: 1;
   }
 
   .contactMe .custom-shape-divider-bottom-1645026081 {

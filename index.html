@@ -37,25 +37,16 @@
                 <li>
                     <a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a>
                 </li>
-
-                <!-- <li>
-                    <a
-                        onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">Experience</a>
-                </li> -->
-
-                <li>
-                    <a onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Skills</a>
-                </li>
             </ul>
         </nav>
-        <button>Contact Me</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
 
         <div id="mobile_menu" class="overlay">
             <div class="overlay_content">
                 <a onclick="document.getElementById('about').scrollIntoView()">About Me</a>
                 <a onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
                 <!-- <a onclick="document.getElementById('experience').scrollIntoView()">Experience</a> -->
-                <a onclick="document.getElementById('skills').scrollIntoView()">Skills</a>
+                <a onclick="document.getElementById('contact').scrollIntoView()">Contact Me</a>
             </div>
         </div>
 
@@ -100,7 +91,7 @@
                 </a>
                 <div class="typewriterContainer">
                     <p id="typewriter" class="typewriter"></p>
-                    <img id="sendEmailImg" class="sendEmailImg" src="img/sendEmail.png">
+                    <img id="sendEmailImg" class="sendEmailImg" src="img/sendEmail.png" onclick="window.location.href='mailto:damian.prochaska@gmail.com'">
                 </div>
 
             </div>
@@ -132,7 +123,7 @@
                 <li>Angular</li>
                 <li>PHP</li>
                 <li>Java</li>
-                <li>C#</li>
+                <li>Python</li>
             </ul>
             <br>
             <br>
@@ -180,7 +171,7 @@
                             <img src="img/website.png" alt="">
                         </a>
 
-                        <a href="">
+                        <a href="https://www.youtube.com/watch?v=Jv9BUvQrM2o">
                             <img class="videoImg" src="img/video.png" alt="Show video presentation of project">
                         </a>
                     </div>
@@ -200,12 +191,8 @@
                         <p><span></span> Node.js, Sequelize, SQLite</p>
                     </div>
                     <div class="project_links">
-                        <a href="https://github.com/DamianProchaska/angular-book-rental">
+                        <a href="https://github.com/DamianProchaska/employee-manager">
                             <img src="img/github.png" alt="">
-                        </a>
-
-                        <a href="comingsoon.html">
-                            <img src="img/website.png" alt="">
                         </a>
 
                         <a href="comingsoon.html">
@@ -284,7 +271,7 @@
             <h2 id="contact">GET IN TOUCH</h2>
             <div class="emailContact">
                 <p>Contact me via e-mail <br><span>damian.prochaska@gmail.com</span></p>
-                <button>send message</button>
+                <button onclick="window.location.href='mailto:damian.prochaska@gmail.com'">send message</button>
             </div>
         </div>
 
