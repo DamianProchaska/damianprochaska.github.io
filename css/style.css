@@ -416,6 +416,10 @@ to {
     margin-bottom: 30px;
   }
 
+  .introduce {
+    margin-bottom: 60px !important;
+  }
+
   .about span {
     color: white;
   }
@@ -503,7 +507,6 @@ to {
   .selector p {
     width: 200px;
     padding: 20px 10px;
-    /* border-bottom: 1px solid var(--secondColor); */
     background-color: var(--bgColor);
     box-shadow: 0 0 20px -5px black;
     opacity: 0.9;
@@ -534,7 +537,6 @@ to {
   .project {
     background-color: #323437;
     color: #e2b714;
-    /* margin: 10px; */
     padding: 20px;
     box-shadow: 0 0 20px -5px black;
     border-radius: 0 8px 8px 8px;
@@ -600,16 +602,15 @@ to {
     width: 65px !important;
   }
 
-
-
   .contactMe {
     background-color: #323437;
     color: var(--mainColor);
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
   }
 
   .contactMe button {
+    margin-top: 40px;
     z-index: 1;
   }
 
@@ -791,7 +792,6 @@ to {
   }
 
   .projectList {
-    /* width: 120%; */
     flex-wrap: wrap;
   }
 
