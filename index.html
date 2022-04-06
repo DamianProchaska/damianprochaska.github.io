@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Prochaska</title>
+    <link rel="icon" href="img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,15 +28,15 @@
 
         <nav>
             <ul class="nav_links">
-                <li>
-                    <a onclick="window.scrollTo(0, 0)"><img src="img/home.png" alt="scroll up" style="width: 20px;"></a>
+                <li onclick="window.scrollTo(0, 0)" id="homeListEl">
+                    <a><img src="img/home.png" alt="scroll up" style="width: 20px;" id="homeBtn"></a>
                 </li>
-                <li>
-                    <a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</a>
+                <li onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                    <a>About Me</a>
                 </li>
 
-                <li>
-                    <a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a>
+                <li onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                    <a>Projects</a>
                 </li>
             </ul>
         </nav>
@@ -59,16 +60,12 @@
                 <span class="desc">I'm front-end web developer</span>
             </h1>
         </div>
-        <!-- <hr> -->
         <div class="photo">
             <img src="img/DSC_0807.jpg" alt="Profile Picture">
         </div>
         <div class="buttons">
             <button class="aboutBtn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
                 ABOUT ME
-            </button>
-            <button class="aboutBtn">
-                CV
             </button>
         </div>
 
