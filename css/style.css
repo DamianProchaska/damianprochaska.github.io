@@ -161,7 +161,7 @@
     flex-basis: calc(50% - 40px);
     justify-content: center;
     flex-direction: row;
-    margin-top: 70px;
+    margin-top: 170px;
   }
 
   .photo img {
@@ -176,7 +176,8 @@
     flex-direction: row;
     flex-basis: calc(50% - 40px);
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 40px;
+    transform-origin: top;
   }
 
   .linklist {
@@ -217,8 +218,6 @@
     transform: translateY(5px);
   }
 
-
-
   .typewriterContainer {
     position: relative;
     top: 50%;
@@ -233,7 +232,8 @@
     white-space: nowrap;
     font-family:  'Montserrat', monospace;
     letter-spacing: 2px;
-    overflow: hidden;transform: translateY(-50%);
+    overflow: hidden;
+    transform: translateY(-50%);
   }
 
 
@@ -801,6 +801,10 @@ to {
     .welcome {
       margin-top: 0;
     }
+
+    .photo {
+      margin-top: 70px;
+    }
   }
 
   @media (max-height: 750px) and (min-width: 1000px){
@@ -816,17 +820,26 @@ to {
       font-size: 100%;
     }
 
+    .photo {
+      margin-top: 70px;
+    }
+
     .photo img {
       width: 250px;
     }
 
-    button{
+    button {
       width: 130px;
       padding: 10px;
     }
 
+    .buttons button {
+      width: 325px;
+    }
+
     .links{
       transform: scale(0.85);
+      margin-top: 41px;
     }
   }
 
@@ -837,9 +850,13 @@ to {
     .photo {
       margin-top: 20px;
     }
-    .links{
+    .links {
       transform: scale(0.8);
-      margin-top: -40px;
+      margin-top: 40px;
+    }
+
+    .buttons button {
+      width: 320px;
     }
   }
 
@@ -850,8 +867,8 @@ to {
     .photo {
       margin-top: 0;
     }
-    .links{
+    .links {
       transform: scale(0.8);
-      margin-top: -50px;
+      margin-top: 40px;
     }
   }
